@@ -298,21 +298,21 @@ while i< len(word):
         <p> Last updated: <time datetime="2026-11-05">November 5, 2026</time></p>
     </footer>
 <script>
-  // 1. Grab the canvas element and get its 2D drawing tool
+  
   const canvas = document.getElementById('logo');
   const ctx = canvas.getContext('2d');
 
-  // 2. Fill the whole 120x120 box with a blue background
+ 
   ctx.fillStyle = "#1f5fa8";
   ctx.fillRect(0, 0, 120, 120);
 
-  // 3. Draw a white circle right in the center (x: 60, y: 60, radius: 45)
+
   ctx.beginPath();
   ctx.arc(60, 60, 45, 0, 2 * Math.PI);
   ctx.fillStyle = "white";
   ctx.fill();
 
-  // 4. Write your initials "IY" in the middle using blue text
+  
   ctx.fillStyle = "#1f5fa8";
   ctx.font = "bold 36px Arial";
   ctx.textAlign = "center";
