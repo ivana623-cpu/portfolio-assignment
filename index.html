@@ -14,7 +14,8 @@ developer, HTML">
 
 <body>
     <header>
-        <img src="images/favicon.jpg" alt="Icon of Ivana Yared" title="Icon" width="600" height="200">
+        <canvas id="logo" width="120" height="120">Ivana Yared logo</canvas>
+
   <h1>Ivana Yared</h1>
    <img src="images/profile.jpg" alt="Portrait of Ivana Yared" title="Ivana Yared" width="200" height="200">
     
@@ -72,7 +73,7 @@ title="You Tube video:Computer Science Motivational Video"
  </ul>
 <li>Web Development
  <ul type="square">
- <li>HTML</li>
+ <li></li><abbr title="HyperText Markup Language">HTML</abbr></li>
  <li>CSS (learning)</li>
  <li>JavaScript (learning)</li>
  </ul>
@@ -84,6 +85,19 @@ title="You Tube video:Computer Science Motivational Video"
     <li>Problem Solving</li>
   </ul>
 </li>
+<h3>Skill Levels</h3>
+<p>
+    <label for="lvl-html">HTML:</label>
+    <meter id="lvl-html" value="0.8" min="0" max="1">80%</meter>
+</p>
+<p>
+    <label for="lvl-css">CSS:</label>
+    <meter id="lvl-css" value="0.3" min="0" max="1" low="0.3" high="0.8" optimum="1">30%</meter>
+</p>
+<p>
+    <label for="lvl-js">JavaScript:</label>
+    <meter id="lvl-js" value="0.7" min="0" max="1">70%</meter>
+</p>
 <h3>My Learning Roadmap</h3>
 <ol type="1">
   <li>HTML5 semantics and accessibility</li>
@@ -131,6 +145,13 @@ while i< len(word):
 
 <section id="education">
     <h2>Education</h2>
+    <p><abbr title="Addis Ababa Science and Technology University">AASTU,</abbr>  
+        <time datetime="2023-09">September 2023</time> — Present
+    </p>
+    <p>
+        <label for="degree">Degree progress:</label>
+        <progress id="degree" value="40" max="100">40%</progress> 40%
+    </p>
     <table border="1" cellpadding="8" cellspacing="0">
         <caption>Academic Record BSc in Software Engineering</caption>
         <thead>
@@ -274,8 +295,30 @@ while i< len(word):
     </main>
     <footer>
         <p>&copy; 2026 Ivana Yared. All rights reserved.</p>
+        <p> Last updated: <time datetime="2026-11-05">November 5, 2026</time></p>
     </footer>
+<script>
+  // 1. Grab the canvas element and get its 2D drawing tool
+  const canvas = document.getElementById('logo');
+  const ctx = canvas.getContext('2d');
 
+  // 2. Fill the whole 120x120 box with a blue background
+  ctx.fillStyle = "#1f5fa8";
+  ctx.fillRect(0, 0, 120, 120);
+
+  // 3. Draw a white circle right in the center (x: 60, y: 60, radius: 45)
+  ctx.beginPath();
+  ctx.arc(60, 60, 45, 0, 2 * Math.PI);
+  ctx.fillStyle = "white";
+  ctx.fill();
+
+  // 4. Write your initials "IY" in the middle using blue text
+  ctx.fillStyle = "#1f5fa8";
+  ctx.font = "bold 36px Arial";
+  ctx.textAlign = "center";
+  ctx.textBaseline = "middle";
+  ctx.fillText("IY", 60, 62);
+</script>
 </body>
 
 </html>
