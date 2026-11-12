@@ -8,17 +8,18 @@
 student and aspiring web developer in Addis Ababa.">
 <meta name="keywords" content="Ivana Yared, portfolio, software engineering, web 
 developer, HTML">
-<meta name="author" content="Ivana Yared    ">
+<meta name="author" content="Ivana Yared">
   <title>Ivana Yared | Portfolio</title>
 </head>
 
 <body>
     <header>
+        <img src="images/favicon.jpg" alt="Icon of Ivana Yared" title="Icon" width="600" height="200">
   <h1>Ivana Yared</h1>
    <img src="images/profile.jpg" alt="Portrait of Ivana Yared" title="Ivana Yared" width="200" height="200">
     
   <p>Software Engineering student and aspiring web developer.</p>
-  <hr>
+  
   <nav>
         <a href="#about">About</a> |
         <a href="#skills">Skills</a> |
@@ -28,14 +29,14 @@ developer, HTML">
         <a href="projects.html">All my Projects</a>
     </nav>
     </header>
-    <hr>
+    
     <main>
   <section id="about"><h2>About Me</h2>
   <p>I am a 3rd year <strong>Software Engineering</strong> student. I <em>really</em> enjoy building websites and my current goal is to be a <mark>full-stack web developer</mark></p>
   <p>Languages I have used: <b>HTML</b>, <b>Python</b> and <i>a little</i> JavaScript.</p> 
   <p>Fun fact: I listen to music when I code.</p>
   </section>
-  <hr>
+  
   <aside>
   <h2>What Inspires Me</h2>
 <blockquote>
@@ -44,7 +45,7 @@ developer, HTML">
 <p>My mentor always says <q>keep it simple, make it functional</q>, so I focus on clean design first.</p>
 <p>Book I am reading: <cite>You Don't Know JS</cite> by Kyle Simpson</p>
 </aside>
-<hr>
+
 <section id="skills"><h2>Skills</h2>
 <ul>
  <li>Programming Languages
@@ -87,15 +88,20 @@ developer, HTML">
 </dl>
 </section>
 
-<hr>
-<h2 id="projects">Projects</h2>
+
+<section id="projects">
+<h2>Projects</h2>
+<article>
 <h3>Simple Calculator</h3>
     <img src="images/project-calculator.jpg" alt="Screenshot of the calculator showing 12 + 30 = 42" width="400" height="250">
     <p>A calculator that adds, subtracts, multiplies and divides.</p>
-
+    </article>
+    <article>
     <h3>Simple Budget Planner</h3>
     <img src="images/project-budget.jpg" alt="Screenshot of budget planner output" width="400" height="250">
     <p>A python program that makes sure we have enough budget to buy certain things.</p>
+    </article>
+    <article>
 <h3>My First Program</h3>
 <p>The first thing I wrote in python was<code>print("hello, world")</code>.
 Then later I started writing loops like while:<pre><code>i=0
@@ -103,10 +109,12 @@ while i< len(word):
    num+=1
    i+=1</p></code></pre>
 </p>
-<hr>
-<h2 id="education">Education</h2>
+</article>
+<p><a href="projects.html">See my projects</a></p>
+</section>
 
-
+<section id="education">
+    <h2>Education</h2>
     <table border="1" cellpadding="8" cellspacing="0">
         <caption>Academic Record BSc in Software Engineering</caption>
         <thead>
@@ -163,11 +171,12 @@ while i< len(word):
             </tr>
         </tfoot>
     </table>
-
-  <hr>
-    <h2 id="contact">Contact</h2>
+</section>
+  
+    <section id="contact">
+    <h2>Contact</h2>
     <p>Address:<br>Addis Ababa, <br>Ethiopia</p>
-    <p>Email: <a href="mailto:ivana.yared@aastustudent.edu.et"></a>ivana.yared@aastustudent.edu.et</p>
+    <p>Email: <a href="mailto:ivana.yared@aastustudent.edu.et">ivana.yared@aastustudent.edu.et</a></p>
     <p>Phone: <a href="tel:+251932430159">+251 932430159</a></p>
     <p>GitHub: <a href="https://github.com/ivana623-cpu">github.com/ivana623-cpu</a></p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/Ivana Yared">linkedin.com/in/Ivana Yared</a></p>
@@ -180,6 +189,8 @@ while i< len(word):
         <area shape="circle" coords="300,100,70" href="https://www.linkedin.com/in/Ivana Yared" alt="LinkedIn">
         <area shape="rect" coords="420,40,580,160" href="mailto:ivana.yared@aastustudent.edu.et" alt="Email">
     </map>
+    </section>
+    </main>
 </body>
 
 </html>
