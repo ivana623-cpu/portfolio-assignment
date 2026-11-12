@@ -19,7 +19,15 @@ developer, HTML">
    <img src="images/profile.jpg" alt="Portrait of Ivana Yared" title="Ivana Yared" width="200" height="200">
     
   <p>Software Engineering student and aspiring web developer.</p>
-  
+  <button type="button"  
+onclick="document.getElementById('hireDialog').showModal()">Hire me</button> 
+<dialog id="hireDialog"> 
+ <h2>Available for internships</h2> 
+ <p>I am available for internships and freelance web projects from June 2027.</p> 
+ <p><a href="#contact">Send me a message</a> or <a href="files/cv.pdf"  
+download>download my CV</a>.</p> 
+ <button type="button" onclick="document.getElementById('hireDialog').close()">Close</button>
+</dialog>
   <nav>
         <a href="#about">About</a> |
         <a href="#skills">Skills</a> |
@@ -50,9 +58,8 @@ developer, HTML">
 <p>Book I am reading: <cite>You Don't Know JS</cite> by Kyle Simpson</p>
 <h3>A talk I recommend</h3>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mCJWiR3Vdi8" 
-title="Computer Science Motivational Video" frameborder="0" 
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-gyroscope; picture-in-picture" allowfullscreen></iframe>
+title="You Tube video:Computer Science Motivational Video" 
+ allowfullscreen></iframe>
 </aside>
 
 <section id="skills"><h2>Skills</h2>
@@ -198,6 +205,9 @@ while i< len(word):
         <area shape="circle" coords="300,100,70" href="https://www.linkedin.com/in/Ivana Yared" alt="LinkedIn">
         <area shape="rect" coords="420,40,580,160" href="mailto:ivana.yared@aastustudent.edu.et" alt="Email">
     </map>
+    <h3>Where I study</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.575908232964!2d38.746889!3d9.010556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOcKwMDAnMzguMCJOIDM4wrA0NCc0OC44IkU!5e0!3m2!1sen!2set!4v1700000000000!5m2!1sen!2set" 
+    width="600" height="500" title="Map of my university campus"></iframe>
     <h3>Send me a message</h3> 
 <form action="thank-you.html" method="get""> 
  <fieldset> 
@@ -263,7 +273,7 @@ while i< len(word):
     </section>
     </main>
     <footer>
-        <p>&copy; Copyright Ivana Yared 2026. All rights reserved.</p>
+        <p>&copy; 2026 Ivana Yared. All rights reserved.</p>
     </footer>
 
 </body>
