@@ -1,0 +1,16 @@
+WEBVTT
+
+00:00.000 --> 00:04.000
+Starting a simple Python calculator program with four operations: addition, subtraction, multiplication, and division.
+
+00:04.000 --> 00:08.500
+Selecting option 1 for addition and entering the numbers 23 and 123, which outputs 146.0.
+
+00:08.500 --> 00:21.000
+Entering 'y' to perform another calculation and returning to the operation menu.
+
+00:21.000 --> 00:31.000
+Selecting option 3 for multiplication and entering 34 and 87, which outputs 2958.0.
+
+00:31.000 --> 00:38.100
+Entering 'n' to exit the loop and complete the program.
